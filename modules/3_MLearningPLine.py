@@ -46,13 +46,13 @@ Xw.append('brak obojętność realizacja pasywny rozwaga wakacje odpoczynek ' * 
 
 ### Vectorisation of words into variables using TFIDF
 #c = TfidfVectorizer(use_idf=False) #or False for common CountVectorizer
-c = CountVectorizer() #The better results
+c = CountVectorizer() #better results
 Xa = c.fit_transform(Xw)
 Xa.shape
 X = Xa[:52]; X_test = Xa[52:]; y = wig['Gain']; y_test = [1,0,0]
 
 
-### Classificators comparison
+### Classifiers comparison
 ### Models preparing
 models = []
 models.append(('LR', LogisticRegression(C=1)))
