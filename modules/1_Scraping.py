@@ -12,7 +12,7 @@ os.chdir('/home/sas/Zasoby/Python/1Dyplom')
 df = pd.DataFrame(columns=['1Date','2Title','3Text'])
 
 ### Links searching
-for j in range(1,3):
+for j in range(1,10):
     url = 'http://forsal.pl/wydarzenia,'+str(j)
     print(url)
     f = requests.get(url)
