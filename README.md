@@ -70,33 +70,56 @@ KNN      0.561  	(0.0638)
 CART     0.533  	(0.0502)
 
 RFC      0.508  	(0.0716)
+
 ETC      0.569  	(0.0709)
+
 AdaBoost 0.480 		(0.0287)
+
 SVMlin   0.561  	(0.0623)
+
 SVMrbf   0.557  	(0.0724)
+
 NNlog    0.569  	(0.0510)
+
 NNrelu   0.569  	(0.0519)
 
 - average accuracy scores for different params:
 Model:  LR
+
 Rank: 1; params: 'C': 1; mean accuracy: 0.61; std accuracy: 0.02
+
 Rank: 2; params: 'C': 0.1; mean accuracy: 0.60; std accuracy: 0.02
+
 Rank: 2; params: 'C': 10; mean accuracy: 0.60; std accuracy: 0.02
+
 Model:  CART
+
 Rank: 1; params: 'max_depth': None; mean accuracy: 0.53; std accuracy: 0.05
+
 Rank: 2; params: 'max_depth': 6; mean accuracy: 0.53; std accuracy: 0.03
+
 Rank: 3; params: 'max_depth': 3; mean accuracy: 0.51; std accuracy: 0.03
+
 Rank: 4; params: 'max_depth': 10; mean accuracy: 0.49; std accuracy: 0.03
+
 Model:  RFC
+
 Rank: 1; params: 'n_estimators': 30; mean accuracy: 0.57; std accuracy: 0.04
+
 Rank: 2; params: 'n_estimators': 50; mean accuracy: 0.52; std accuracy: 0.02
+
 Rank: 3; params: 'n_estimators': 70; mean accuracy: 0.50; std accuracy: 0.04
 Model:  KNN
 Rank: 1; params: 'n_neighbors': 3; mean accuracy: 0.52; std accuracy: 0.04
+
 Rank: 2; params: 'n_neighbors': 2; mean accuracy: 0.50; std accuracy: 0.02
+
 Rank: 3; params: 'n_neighbors': 5; mean accuracy: 0.50; std accuracy: 0.05
+
 Model:  SVC
+
 Rank: 1; params: 'kernel': 'rbf'; mean accuracy: 0.56; std accuracy: 0.00
+
 Rank: 2; params: 'kernel': 'linear'; mean accuracy: 0.56; std accuracy: 0.02
 
 - finally linear regression model has been choosen by pipeline, with average accuracy 0.602 (C=1, countvectorizer ngram_range=(1,1), truncatedSVD n_components=6).
