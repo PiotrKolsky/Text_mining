@@ -84,6 +84,7 @@ NNlog    0.569  	(0.0510)
 NNrelu   0.569  	(0.0519)
 
 - average accuracy scores for different params:
+
 Model:  LR
 
 Rank: 1; params: 'C': 1; mean accuracy: 0.61; std accuracy: 0.02
