@@ -61,27 +61,27 @@ Forecasting
 
 - preliminary average accuracy scores:
 
-Name  mean_accuracy  std_accuracy
+Name  mean_accuracy  (std_accuracy)
 
-LR       0.573  	(0.0656)
+LR       0.573  		(0.0656)
 
-KNN      0.561  	(0.0638)
+KNN      0.561  		(0.0638)
 
-CART     0.533  	(0.0502)
+CART     0.533  		(0.0502)
 
-RFC      0.508  	(0.0716)
+RFC      0.508  		(0.0716)
 
-ETC      0.569  	(0.0709)
+ETC      0.569  		(0.0709)
 
-AdaBoost 0.480 		(0.0287)
+AdaBoost 0.480 			(0.0287)
 
-SVMlin   0.561  	(0.0623)
+SVMlin   0.561  		(0.0623)
 
-SVMrbf   0.557  	(0.0724)
+SVMrbf   0.557  		(0.0724)
 
-NNlog    0.569  	(0.0510)
+NNlog    0.569  		(0.0510)
 
-NNrelu   0.569  	(0.0519)
+NNrelu   0.569  		(0.0519)
 
 - average accuracy scores for different params:
 
@@ -110,7 +110,9 @@ Rank: 1; params: 'n_estimators': 30; mean accuracy: 0.57; std accuracy: 0.04
 Rank: 2; params: 'n_estimators': 50; mean accuracy: 0.52; std accuracy: 0.02
 
 Rank: 3; params: 'n_estimators': 70; mean accuracy: 0.50; std accuracy: 0.04
+
 Model:  KNN
+
 Rank: 1; params: 'n_neighbors': 3; mean accuracy: 0.52; std accuracy: 0.04
 
 Rank: 2; params: 'n_neighbors': 2; mean accuracy: 0.50; std accuracy: 0.02
