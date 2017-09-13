@@ -62,9 +62,13 @@ Forecasting
 - preliminary average accuracy scores:
 
 Name  mean_accuracy  std_accuracy
+
 LR       0.573  	(0.0656)
+
 KNN      0.561  	(0.0638)
+
 CART     0.533  	(0.0502)
+
 RFC      0.508  	(0.0716)
 ETC      0.569  	(0.0709)
 AdaBoost 0.480 		(0.0287)
