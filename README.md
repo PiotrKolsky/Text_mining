@@ -56,32 +56,77 @@ Forecasting
 - labels were predicted.
 
 4. Results and conclusions
-- 1 previous day articles optimal as the explanatory variables
-- dimensionality reduction to 6 first dimensions (of total 148k)
+Preliminary average accuracy scores:
+- for previous one day window:
 
-- preliminary average accuracy scores:
+Name  mean_accuracy  std_accuracy
+LR       0.573  	(0.0656)
+KNN      0.561  	(0.0638)
+CART     0.533  	(0.0502)
+RFC      0.508  	(0.0716)
+ETC      0.569  	(0.0709)
+AdaBoost 0.480 		(0.0287)
+SVMlin   0.561  	(0.0623)
+SVMrbf   0.557  	(0.0724)
+NNlog    0.569  	(0.0510)
+NNrelu   0.569  	(0.0519)
 
-Name  mean_accuracy  (std_accuracy)
+- for previous 2 days window:
+Name  mean_accuracy  std_accuracy
+LR       0.569  	(0.0564)
+KNN      0.557  	(0.0762)
+CART     0.533  	(0.0682)
+RFC      0.532  	(0.0274)
+ETC      0.500  	(0.0425)
+AdaBoost 0.541  	(0.0689)
+SVMlin   0.553  	(0.0634)
+SVMrbf   0.557  	(0.0724)
+NNlog    0.525  	(0.054)
+NNrelu   0.545  	(0.0819)
 
-LR       0.573  		(0.0656)
+- for previous 3 days window:
+Name  mean_accuracy  std_accuracy
+LR       0.561  	(0.0652)
+KNN      0.520 	 	(0.0532)
+CART     0.529  	(0.0476)
+RFC      0.553  	(0.0262)
+ETC      0.508  	(0.0883)
+AdaBoost 0.496  	(0.0611)
+SVMlin   0.582  	(0.0742)
+SVMrbf   0.557  	(0.0724)
+NNlog    0.545  	(0.0622)
+NNrelu   0.545  	(0.0576)
 
-KNN      0.561  		(0.0638)
+- for previous 4 days window:
+Name  mean_accuracy  std_accuracy
+LR       0.573  	(0.0647)
+KNN      0.536  	(0.0347)
+CART     0.549  	(0.0627)
+RFC      0.504  	(0.0623)
+ETC      0.496  	(0.0463)
+AdaBoost 0.512  	(0.0260)
+SVMlin   0.541  	(0.0447)
+SVMrbf   0.557  	(0.0724)
+NNlog    0.549  	(0.0228)
+NNrelu   0.549  	(0.0614)
 
-CART     0.533  		(0.0502)
+- for previous 7 days window:
+Name  mean_accuracy  std_accuracy
+LR       0.504  	(0.0794)
+KNN      0.545  	(0.0826)
+CART     0.472  	(0.0606)
+RFC      0.488  	(0.0260)
+ETC      0.504  	(0.0951)
+AdaBoost 0.513  	(0.0622)
+SVMlin   0.529  	(0.0640)
+SVMrbf   0.557  	(0.0724)
+NNlog    0.565  	(0.0589)
+NNrelu   0.504  	(0.0921)
 
-RFC      0.508  		(0.0716)
+- 1 previous day articles is optimal as the explanatory variables
+- dimensionality reduction to 6 first dimensions (of total 148k).
 
-ETC      0.569  		(0.0709)
-
-AdaBoost 0.480 			(0.0287)
-
-SVMlin   0.561  		(0.0623)
-
-SVMrbf   0.557  		(0.0724)
-
-NNlog    0.569  		(0.0510)
-
-NNrelu   0.569  		(0.0519)
+Following calculations have been conducted for 1 day window only.
 
 - average accuracy scores for different params:
 
@@ -125,7 +170,7 @@ Rank: 1; params: 'kernel': 'rbf'; mean accuracy: 0.56; std accuracy: 0.00
 
 Rank: 2; params: 'kernel': 'linear'; mean accuracy: 0.56; std accuracy: 0.02
 
-- finally linear regression model has been choosen by pipeline, with average accuracy 0.602 (C=1, countvectorizer ngram_range=(1,1), truncatedSVD n_components=6).
+- finally linear regression model has been choosen by pipeline, with average accuracy 0.60 (C=1, countvectorizer ngram_range=(1,1), truncatedSVD n_components=6).
 
 5. Appendix - search engine & recommender
 - to facilitate content management and read articles on certain subject area, simple search engine and recomendation engine was added, both based on cosine similarity.
