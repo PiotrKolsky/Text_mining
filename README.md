@@ -82,6 +82,7 @@ NNlog    0.569  	(0.0510)
 NNrelu   0.569  	(0.0519)
 
 - for previous 2 days window:
+
 Name  mean_accuracy  std_accuracy
 
 LR       0.569  	(0.0564)
@@ -105,6 +106,7 @@ NNlog    0.525  	(0.0540)
 NNrelu   0.545  	(0.0819)
 
 - for previous 3 days window:
+
 Name  mean_accuracy  std_accuracy
 
 LR       0.561  	(0.0652)
@@ -128,6 +130,7 @@ NNrelu   0.545  	(0.0576)
 
 
 - for previous 4 days window:
+
 Name  mean_accuracy  std_accuracy
 
 LR       0.573  	(0.0647)
@@ -151,6 +154,7 @@ NNlog    0.549  	(0.0228)
 NNrelu   0.549  	(0.0614)
 
 - for previous 7 days window:
+
 Name  mean_accuracy  std_accuracy
 
 LR       0.504  	(0.0794)
@@ -220,7 +224,7 @@ Rank: 1; params: 'kernel': 'rbf'; mean accuracy: 0.56; std accuracy: 0.00
 
 Rank: 2; params: 'kernel': 'linear'; mean accuracy: 0.56; std accuracy: 0.02
 
-- finally linear regression model has been choosen by pipeline, with average accuracy 0.60 (C=1, countvectorizer ngram_range=(1,1), truncatedSVD n_components=6).
+- finally linear regression model has been choosen by pipeline, with average accuracy 0.60 (one previous day window, C=1, countvectorizer ngram_range=(1,1), truncatedSVD n_components=6).
 
 5. Appendix - search engine & recommender
 - to facilitate content management and read articles on certain subject area, simple search engine and recomendation engine was added, both based on cosine similarity.
