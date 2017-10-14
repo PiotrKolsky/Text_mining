@@ -7,7 +7,7 @@ Rather than exact percent of index growth, it was decided to classify respective
 - 1 means daily index growth (buy signal), the profit at the end of day is expected,
 - 0 means index falling (sell signal), the loss at the end of day is forecasted.
 
-Survey performed on July/September 2017 using previous 246 days data, on Python 3.5.
+Survey has been performed in July/September 2017 using previous 246 days data, on Python 3.5.
 
 2. Data description
 
