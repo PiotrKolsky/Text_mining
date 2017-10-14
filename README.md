@@ -2,7 +2,7 @@
 
 1. Purposes of the project
 
-The aim of the project was to test the possibility of forecasting future change of Warsaw Stock Exchange Index (WIG), depending on arcticles content. The term frequency of particular words in articles was used as a explanatory variables.
+The aim of the project was to test the possibility of forecasting future change of Warsaw Stock Exchange Index (WIG), depending on press articles content. The term frequency of particular words in articles was used as a explanatory variables.
 Rather than exact percent of index growth, it was decided to classify respective week press content to day index change classification [1/0], where:
 - 1 means daily index growth (buy signal), the profit at the end of day is expected,
 - 0 means index falling (sell signal), the loss at the end of day is forecasted.
